@@ -1,0 +1,125 @@
+#this is how we define a single line comment in python
+"""we are attending the python class
+we are learning how to comment in python"""
+print("a")
+
+
+variables in python
+
+'''variables in python'''
+x=20
+y="APEKSHA"
+print(y,x)
+x=5
+print(x)
+#this is how we check the type of a variable
+print(type(y))
+#multi assignment
+x,y,z="orange","apple","banana"
+print(x)
+print(y)
+print(z)
+x=y=z="orange"
+print(x)
+print(y)
+print(z)
+#unpaking of collection(list)
+fruits=["orange","apple","banana"]
+x,y,z=fruits
+print(x)
+print(y)
+print(z)
+#global variable
+x="amazing"
+def myfunc():
+  x="fantastic"
+  print("python is "+x)
+
+myfunc()
+print("python is "+x)
+
+data types in python
+
+x=5
+print(type(x))
+x="hello"
+print(type(x))
+x=20.5
+print(type(x))
+fruits=["orange","apple","banana"]
+print(type(fruits))
+fruits=("orange","apple","banana")
+print(type(fruits))
+x={"name":"Apekshsa","age":19}
+print(type(x))
+x=True
+print(type(x))
+fruits={"orange","apple","banana"}
+print(type(fruits))
+#type conversion:convertion of one datatype to another datatype
+x=str(1)
+print(type(x))
+x=float(10)
+print(type(x))
+print(x)
+x=int(2.8)
+print(type(x))
+print(x)
+
+
+import random
+
+for i in range (10):
+  print(random.randint(1,100))
+
+from ast import Yield
+#x/=3
+#X%=3
+#X+=3......
+
+# logical operator
+ #x<5 and x<10
+ #x<5 or x<4
+ #not(x<5 and x<10)
+
+a=2
+b=200
+if a>b:
+  print("a is greater than b")
+elif a<b:
+   print("b is greater than a")
+else:
+   print("both are equal")
+
+name=input("Enter your name ")
+age=int(input("Enter your age "))
+if age>=18:
+  print("You're eligible to vote")
+else:
+  print("You're not eligible to vote")
+  c=18-age
+  print("you will have to wait for",c,"years to vote")
+
+name=input("Enter your name ")
+age=int(input("Enter your age "))
+if age>=18:
+  print("You're eligible to vote")
+else:
+  print("You're not eligible to vote")
+
+  print(f"you will have to wait for {18-age} years to vote")
+
+# while loop
+i=1
+while i<6:
+  print(i)
+  i=i+1
+
+  if i==3:
+    continue
+
+
+#for loop: it is a loop which is used for iterating over a sequence(list,tuple,etc)
+fruits=["orange","apple","banana"]
+for i in fruits:
+  print(i)
