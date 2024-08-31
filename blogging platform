@@ -1,0 +1,48 @@
+# Blogging Platform
+
+Blogs = {}
+
+def create_Blogs():
+    title = input("Enter Blog title: ")
+    content = input("Enter Blog content: ")
+    Blogs[title] = content
+    print("Blog created successfully!")
+
+def view_Blogs():
+    title = input("Enter Blog title: ")
+    if title in Blogs:
+        print(Blogs[title])
+    else:
+        print("Blog not found!")
+
+def delete_Blogs():
+    title = input("Enter Blog title: ")
+    if title in Blogs:
+        del Blogs[title]
+        print("Blog deleted successfully!")
+    else:
+        print("Blog not found!")
+
+def list_Blogs():
+    for title in Blogs:
+        print(title)
+
+while True:
+    print("1. Create Blog")
+    print("2. View Blog")
+    print("3. Delete Blog")
+    print("4. List Blogs")
+    print("5. Exit")
+    choice = input("Enter your choice: ")
+    if choice == "1":
+        create_Blogs()
+    elif choice == "2":
+        view_Blogs()
+    elif choice == "3":
+        delete_Blogs()
+    elif choice == "4":
+        list_Blogs()
+    elif choice == "5":
+        break
+    else:
+        print("Invalid choice. Please try again.")
